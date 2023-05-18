@@ -4,8 +4,8 @@ export const ButtonStyle = styled.button`
   width: 24rem;
   height: 4rem;
 
-  color: white;
-  background-color: ${props => props.theme.colors.secondary};
+  color: ${props => props.color ? props.theme.colors.disable : 'white'};
+  background-color: ${props => props.color ? props.color : props.theme.colors.secondary};
 
   border: none;
   border-radius: ${props => props.theme.radius.litle};

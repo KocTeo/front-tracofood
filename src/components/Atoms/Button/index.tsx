@@ -5,10 +5,11 @@ type ButtonProps = {
   name: string;
   height?: string;
   width?: string;
+  color?: string;
 }
 
-export const Button: React.FC<ButtonProps> = ({ name,  height, width }) => {
+export const Button: React.FC<ButtonProps> = ({ name,  height, width, color }) => {
   return (
-    <ButtonStyle>{name}</ButtonStyle>
+    <ButtonStyle color={color}>{name}</ButtonStyle>
   )
 }
