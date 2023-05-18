@@ -8,6 +8,7 @@ export const LoginButtons: React.FC = () => {
       <Button name="Entrar" />
       <span>ou</span>
       <Button name="Entrar com o Google" color="white" />
+      <span>Não tem uma conta? <a href="/register">Cadastre</a></span>
     </LoginButtonsStyle>
   )
 }

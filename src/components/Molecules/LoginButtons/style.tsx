@@ -13,4 +13,11 @@ export const LoginButtonsStyle = styled.div`
     color: ${props => props.theme.colors.disable};
     font-weight: ${props => props.theme.font.weight.bold};
   }
+
+  a {
+    text-decoration: none;
+
+    font-weight: ${props => props.theme.font.weight.bold};
+    color: ${props => props.theme.colors.util};
+  }
 `;
