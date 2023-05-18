@@ -6,8 +6,8 @@ export const LoginButtonsStyle = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  height: 180px;
-  width: 360px;
+  height: 40%;
+  width: 100%;
 
   span {
     color: ${props => props.theme.colors.disable};
