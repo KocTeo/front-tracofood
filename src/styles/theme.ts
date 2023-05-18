@@ -4,7 +4,7 @@ const theme = {
     secondary: '#DC9000',
     secondary_light: '#E6A11F',
     util: '#223263',
-    disable: '##C8C8C8'
+    disable: '#C8C8C8'
   },
 
   font: {
