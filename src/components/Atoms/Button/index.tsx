@@ -6,10 +6,11 @@ type ButtonProps = {
   height?: string;
   width?: string;
   color?: string;
+  click: Function;
 }
 
-export const Button: React.FC<ButtonProps> = ({ name,  height, width, color }) => {
+export const Button: React.FC<ButtonProps> = ({ name,  height, width, color, click }) => {
   return (
-    <ButtonStyle color={color}>{name}</ButtonStyle>
+    <ButtonStyle color={color} onClick={() => click()}>{name}</ButtonStyle>
   )
 }
