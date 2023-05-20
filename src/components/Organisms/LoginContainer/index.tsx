@@ -1,6 +1,6 @@
-import { LoginButtons } from "@/components/Molecules/LoginButtons";
-import { LoginHead } from "@/components/Molecules/LoginHead";
-import { LoginInputs } from "@/components/Molecules/LoginInputs";
+import { LoginButtons } from "@/components/Molecules/Login/LoginButtons";
+import { LoginHead } from "@/components/Molecules/Login/LoginHead";
+import { LoginInputs } from "@/components/Molecules/Login/LoginInputs";
 import React, { useState } from "react";
 import { LoginContainerStyle } from "./style";
 
