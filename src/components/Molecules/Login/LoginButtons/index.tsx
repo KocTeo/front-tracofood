@@ -14,7 +14,7 @@ export const LoginButtons: React.FC<LoginButtonsProps> = ({ email }) => {
     if(email.includes('adm')) {
       return route.push('/adm/products')
     }
-    console.log('sem adm no email');
+    return route.push('/products')
   }
 
   const googleLogin = () => {}
