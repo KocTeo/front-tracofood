@@ -2,7 +2,11 @@ import { styled } from "styled-components";
 
 export const ProductCardStyle = styled.div`
   height: 128px;
-  width: 80%;
+  width: 95%;
+
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.3);
+
+  margin: 3px;
 
   border: 1px solid ${props => props.theme.colors.disable};
   border-radius: ${props => props.theme.radius.litle};
