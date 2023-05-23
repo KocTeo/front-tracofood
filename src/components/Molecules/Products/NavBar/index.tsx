@@ -9,7 +9,7 @@ export const NavBar: React.FC = () => {
   return (
     <NavBarStyle>
       {linkNames.map((link) => (
-        <div>
+        <div key={link}>
           <Link path={`/products`} name={link} key={link}/>
         </div>
       ))}
