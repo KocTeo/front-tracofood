@@ -16,18 +16,21 @@ export const ProductCardStyle = styled.div`
 
   .img_description {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 
-    width: 50%;
+    margin-left: 15px;
+
+    width: 80%;
 
     h3 {
-      font-size: 24px;
+      margin-left: 30px;
+      font-size: 20px;
       color: ${props => props.theme.colors.util};
     }
    
     span {
-      font-size: 15px;
+      margin-left: 30px;
+      font-size: 14 px;
       color: ${props => props.theme.colors.disable};
     }
   }

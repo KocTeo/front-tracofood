@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ProductCardStyle } from "./style";
 import { Icon } from "@/components/Atoms/Icon";
 import { Button } from "@/components/Atoms/Button";
 
 export const ProductCard: React.FC = () => {
-  const products = [
-    'Produto 1', 'Produto 2', 'Produto 3', 'Produto 1', 'Produto 2', 'Produto 3', 'Produto 1', 'Produto 2', 'Produto 3'
-  ]
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const response = fetch('/products_data.json')
+    .then((res) => res.json());
+
+    const data = response.then((data) => setProducts(data.products))
+    
+  }, [products])
 
   const test = () => {
     console.log('test');
@@ -14,22 +20,22 @@ export const ProductCard: React.FC = () => {
 
   return (
     <>
-    {products.map((product: string) => (
-      <ProductCardStyle key={product}>
+    {products.map(({ name, description, price, image }) => (
+      <ProductCardStyle key={name}>
         <div className="img_description">
           <Icon
             alt="foto da comida"
-            path="/placeholder_product.svg"
+            path={image}
             width="100px"
             height="100px"
           />
           <div>
-            <h3>{product}</h3>
-            <span>(Descrição do Produto com ingredientes)</span>
+            <h3>{name}</h3>
+            <span>({description})</span>
           </div>
         </div>
         <div className="price_edit">
-          <span>R$60,00</span>
+          <span>R${price}</span>
           <Button click={test} name="Editar" />
         </div>
       </ProductCardStyle>
