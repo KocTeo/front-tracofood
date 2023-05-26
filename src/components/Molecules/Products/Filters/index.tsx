@@ -2,7 +2,11 @@ import { Icon } from "@/components/Atoms/Icon"
 import { FilterStyle } from "./style"
 import { Button } from "@/components/Atoms/Button"
 
-export const Filters: React.FC = () => {
+type FiltersType = {
+  filter: Function
+}
+
+export const Filters: React.FC<FiltersType> = ({ filter }) => {
   const test = () => {
     console.log('test');
   }
@@ -14,7 +18,7 @@ export const Filters: React.FC = () => {
         <h2>Todos</h2>
       </div>
       <div>
-        <Icon alt="ordenar alfabeticamente" path="/alpha_order.svg"/>
+        <Icon alt="ordenar alfabeticamente" path="/alpha_order.svg" click={filter} />
         <Button width="148px" height="54px" click={test} name="Adicionar +"/>
       </div>
     </FilterStyle>

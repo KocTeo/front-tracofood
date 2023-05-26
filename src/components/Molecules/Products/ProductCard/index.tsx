@@ -3,17 +3,16 @@ import { ProductCardStyle } from "./style";
 import { Icon } from "@/components/Atoms/Icon";
 import { Button } from "@/components/Atoms/Button";
 
-export const ProductCard: React.FC = () => {
-  const [products, setProducts] = useState([]);
+type ProductCardType = {
+  products: {
+    name: string;
+    description: string;
+    price: number;
+    image: string;
+  }[]
+}
 
-  useEffect(() => {
-    const response = fetch('/products_data.json')
-    .then((res) => res.json());
-
-    const data = response.then((data) => setProducts(data.products))
-    
-  }, [products])
-
+export const ProductCard: React.FC<ProductCardType> = ({ products }) => {
   const test = () => {
     console.log('test');
   }

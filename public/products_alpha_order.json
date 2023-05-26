@@ -1,0 +1,65 @@
+{
+  "products": [
+    {
+      "name": "Açaí com frutas ",
+      "description": "Açaí, banana, morango, uva, leite ninho em pó e leite condensado",
+      "price": 18.00,
+      "image": "/products_images/acai_frutas.svg"
+    },
+    {
+      "name": "Barca de Açaí",
+      "description": "Açaí, banana, morango, uva, leite ninho em pó e leite condensado",
+      "price": 22.00,
+      "image": "/products_images/barca_acai.svg"
+    },
+    {
+      "name": "Lanche de Churrasco",
+      "description": "Pão, hamburguer, calabresa, iscas de carne, muçarela, cebola e picles",
+      "price": 30.00,
+      "image": "/products_images/burguer_churas.svg"
+    },
+    {
+      "name": "Lanche X-Burguer",
+      "description": "Pão, hamburguer, alface, tomate, queijo cheddar, cebola e picles",
+      "price": 22.00,
+      "image": "/products_images/burguer.svg"
+    },
+    {
+      "name": "Pizza de Marguerita",
+      "description": "Muçarela, tomate, majericão , orégano",
+      "price": 60.00,
+      "image": "/products_images/pizza_marg.svg"
+    },
+    {
+      "name": "Pizza de Strogonofe",
+      "description": "Strogonofe, muçarela e orégano",
+      "price": 65.00,
+      "image": "/products_images/pizza_strogonof.svg"
+    },
+
+    {
+      "name": "Refrigerante Coca-Cola  350ml",
+      "description": "",
+      "price": 6.00,
+      "image": "/products_images/cola_350.svg"
+    },
+    {
+      "name": "Refrigerante Coca-Cola zero  350ml",
+      "description": "",
+      "price": 5.00,
+      "image": "/products_images/cola_zero_350.svg"
+    },
+    {
+      "name": "Torta de Leite Ninho",
+      "description": "Massa de Baunilha; Creme de ninho Tradicional; Morango; Chantilly",
+      "price": 70.00,
+      "image": "/products_images/torta_ninho.svg"
+    },
+    {
+      "name": "Taça de sonho de valsa",
+      "description": "Chocolate branco e preto, sonho de valsa, morango e leite condensado",
+      "price": 15.00,
+      "image": "/products_images/taca_sonho_valca.svg"
+    }
+  ]
+}
