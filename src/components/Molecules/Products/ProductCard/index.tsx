@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ProductCardStyle } from "./style";
 import { Icon } from "@/components/Atoms/Icon";
 import { Button } from "@/components/Atoms/Button";
+import { useRouter } from "next/router";
 
 type ProductCardType = {
   products: {
@@ -13,6 +14,7 @@ type ProductCardType = {
 }
 
 export const ProductCard: React.FC<ProductCardType> = ({ products }) => {
+  const { pathname } = useRouter();
   const test = () => {
     console.log('test');
   }
@@ -35,7 +37,7 @@ export const ProductCard: React.FC<ProductCardType> = ({ products }) => {
         </div>
         <div className="price_edit">
           <span>R${price}</span>
-          <Button click={test} name="Editar" />
+          {pathname.includes('adm') ? (<Button click={test} name="Editar" />): (<Button click={test} name="Comprar" />)}
         </div>
       </ProductCardStyle>
     ))}

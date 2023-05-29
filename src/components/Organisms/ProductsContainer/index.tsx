@@ -17,15 +17,11 @@ export const ProductsContainer: React.FC = () => {
 
   useEffect(() => {
     if (!order) {
-      console.log(order);
-      
       const response = fetch('/products_data.json')
       .then((res) => res.json());
 
       response.then((data) => setProducts(data.products))
     } else {
-      console.log(order);
-      
       const response = fetch('/products_alpha_order.json')
       .then((res) => res.json());
 
